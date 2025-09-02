@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IMDb</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: #fff;
+    }
+    .navbar {
+      background-color: #1c1c1c;
+    }
+    .movie-card {
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .movie-card:hover {
+      transform: scale(1.05);
+    }
+    .card-title{
+      color: white;
+    }
+    .card-text{
+      color: white;
+    }
+    footer {
+      background-color: #1c1c1c;
+      padding: 40px 0;
+      margin-top: 40px;
+
+      font-size: 14px;
+      color: #aaa;
+    }
+    footer h5 {
+      color: #ffc107;
+    }
+    footer a {
+      color: #aaa;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: #fff;
+    }
+    .hover-effect:hover {
+      transition: transform 0.3s ease-in-out;
+    }
+    .hover-effect:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold text-warning" href="#">IMDb </a>
+      
+      <form class="d-flex ms-auto me-3" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search movies..." aria-label="Search">
+        <button class="btn btn-outline-warning" type="submit">Search</button>
+      </form>
+
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Watchlist</a></li>
+        <li class="nav-item"><a class="nav-link text-warning fw-bold" href="#">Sign In</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container my-4">
+    <div class="p-5 mb-4 bg-dark rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold text-warning">Welcome to IMDb</h1>
+        <p class="col-md-8 fs-4">(Static design for now!)</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <h2 class="mb-4 text-warning">Trending Movies</h2>
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <div class="movie-card card">
+          <img src="Photos/shawshank_redemption_ver1.jpg" class="card-img-top" alt="Movie Poster">
+          <div class="card-body">
+            <h5 class="card-title">Mahavatar Narsimha</h5>
+            <p class="card-text">Rating: ⭐ 9.3</p>
+            <a href="#" class="btn btn-warning">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="movie-card card">
+          <img src="Photos/last_godfather.jpg" class="card-img-top" alt="Movie Poster">
+          <div class="card-body">
+            <h5 class="card-title">The Godfather</h5>
+            <p class="card-text">Rating: ⭐ 9.2</p>
+            <a href="#" class="btn btn-warning">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="movie-card card">
+          <img src="Photos/dark_knight_rises.jpg" class="card-img-top" alt="Movie Poster">
+          <div class="card-body">
+            <h5 class="card-title">The Dark Knight</h5>
+            <p class="card-text">Rating: ⭐ 9.0</p>
+            <a href="#" class="btn btn-warning">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="movie-card card">
+          <img src="Photos/twelve_angry_men.jpg" class="card-img-top" alt="Movie Poster">
+          <div class="card-body">
+            <h5 class="card-title">12 Angry Men</h5>
+            <p class="card-text">Rating: ⭐ 9.0</p>
+            <a href="#" class="btn btn-warning">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="mb-4 text-warning">Top Movies</h2>
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <div class="movie-card card">
+          <img src="Photos/fight_club_ver2.jpg" class="card-img-top" alt="Movie Poster">
+          <div class="card-body">
+            <h5 class="card-title">Fight Club</h5>
+            <p class="card-text">Rating: ⭐ 9.3</p>
+            <a href="#" class="btn btn-warning">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="movie-card card">
+          <img src="Photos/inception.jpg" class="card-img-top" alt="Movie Poster">
+          <div class="card-body">
+            <h5 class="card-title">Inception</h5>
+            <p class="card-text">Rating: ⭐ 9.2</p>
+            <a href="#" class="btn btn-warning">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="movie-card card">
+          <img src="Photos/forrest_gump.jpg" class="card-img-top" alt="Movie Poster">
+          <div class="card-body">
+            <h5 class="card-title">Forrest Gump</h5>
+            <p class="card-text">Rating: ⭐ 9.0</p>
+            <a href="#" class="btn btn-warning">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="movie-card card">
+          <img src="Photos/lord_of_the_rings_the_two_towers_ver3.jpg" class="card-img-top" alt="Movie Poster">
+          <div class="card-body">
+            <h5 class="card-title">The Lord of the Rings: The Two Towers</h5>
+            <p class="card-text">Rating: ⭐ 9.0</p>
+            <a href="#" class="btn btn-warning">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="mb-4 text-warning">Popular Movies</h2>
+      <!-- Artists & Directors Section -->
+  <div class="container my-5">
+    <h2 class="mb-4 text-warning">Top Artists & Directors</h2>
+    <div class="row text-center">
+      <div class="col-md-2 col-4 mb-4 ">
+        <img src="Photos/Christopher Nolan.webp" 
+             alt="Christopher Nolan" class="rounded-circle img-fluid border border-warning" style="width:180px; height:180px; object-fit:cover;">
+        <p class="mt-2">Christopher Nolan</p>
+      </div>
+      <div class="col-md-2 col-4 mb-4">
+        <img src="Photos/Quentin Tarantino.webp" 
+             alt="Quentin Tarantino" class="rounded-circle img-fluid border border-warning hover-effect" style="width:180px; height:180px; object-fit:cover;">
+        <p class="mt-2">Quentin Tarantino</p>
+      </div>
+      <div class="col-md-2 col-4 mb-4">
+        <img src="Photos/Leonardo DiCaprio.webp" 
+             alt="Leonardo DiCaprio" class="rounded-circle img-fluid border border-warning" style="width:180px; height:180px; object-fit:cover;">
+        <p class="mt-2">Leonardo DiCaprio</p>
+      </div>
+      <div class="col-md-2 col-4 mb-4">
+        <img src="Photos/Martin Scorsese.webp" 
+             alt="Martin Scorsese" class="rounded-circle img-fluid border border-warning" style="width:180px; height:180px; object-fit:cover;">
+        <p class="mt-2">Martin Scorsese</p>
+      </div>
+      <div class="col-md-2 col-4 mb-4">
+        <img src="Photos/Robert Downey Jr.webp" 
+             alt="Robert Downey Jr." class="rounded-circle img-fluid border border-warning" style="width:180px; height:180px; object-fit:cover;">
+        <p class="mt-2">Robert Downey Jr.</p>
+      </div>
+      <div class="col-md-2 col-4 mb-4">
+        <img src="Photos/Scarlett Johansson.webp" 
+             alt="Scarlett Johansson" class="rounded-circle img-fluid border border-warning" style="width:180px; height:180px; object-fit:cover;">
+        <p class="mt-2">Scarlett Johansson</p>
+      </div>
+    </div>
+  </div>
+
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <div class="movie-card card">
+          <img src="Photos/one_flew_over_the_cuckoos_nest_ver1.jpg" class="card-img-top" alt="Movie Poster">
+          <div class="card-body">
+            <h5 class="card-title">One Flew Over the Cuckoo's Nest</h5>
+            <p class="card-text">Rating: ⭐ 9.3</p>
+            <a href="#" class="btn btn-warning">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="movie-card card">
+          <img src="Photos/matrix_resurrections_ver2.jpg" class="card-img-top" alt="Movie Poster">
+          <div class="card-body">
+            <h5 class="card-title">The Matrix</h5>
+            <p class="card-text">Rating: ⭐ 9.2</p>
+            <a href="#" class="btn btn-warning">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="movie-card card">
+          <img src="Photos/spiderman_across_the_spiderverse_ver2.jpg" class="card-img-top" alt="Movie Poster">
+          <div class="card-body">
+            <h5 class="card-title">Spider-Man: Across the Spider-Verse</h5>
+            <p class="card-text">Rating: ⭐ 9.0</p>
+            <a href="#" class="btn btn-warning">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="movie-card card">
+          <img src="Photos/Star Wars Episode V The Empire Strikes Back.jpg" class="card-img-top" alt="Movie Poster">
+          <div class="card-body">
+            <h5 class="card-title">Star Wars Episode V: The Empire Strikes Back</h5>
+            <p class="card-text">Rating: ⭐ 9.0</p>
+            <a href="#" class="btn btn-warning">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="mb-4 text-warning">Recent Movies</h2>
+    <div class="row">
+      <div class="col-md-3 mb-4">
+        <div class="movie-card card">
+          <img src="Photos/shichinin_no_samurai.jpg" class="card-img-top" alt="Movie Poster">
+          <div class="card-body">
+            <h5 class="card-title">Seven Samurai</h5>
+            <p class="card-text">Rating: ⭐ 9.3</p>
+            <a href="#" class="btn btn-warning">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="movie-card card">
+          <img src="Photos/WALL·E.webp" class="card-img-top" alt="Movie Poster">
+          <div class="card-body">
+            <h5 class="card-title">WALL·E</h5>
+            <p class="card-text">Rating: ⭐ 9.2</p>
+            <a href="#" class="btn btn-warning">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="movie-card card">
+          <img src="Photos/spirited_away.jpg" class="card-img-top" alt="Movie Poster">
+          <div class="card-body">
+            <h5 class="card-title">Spirited Away</h5>
+            <p class="card-text">Rating: ⭐ 9.0</p>
+            <a href="#" class="btn btn-warning">View Details</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="movie-card card">
+          <img src="Photos/lion_king.jpg" class="card-img-top" alt="Movie Poster">
+          <div class="card-body">
+            <h5 class="card-title">The Lion King</h5>
+            <p class="card-text">Rating: ⭐ 9.0</p>
+            <a href="#" class="btn btn-warning">View Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <h5 class="mb-3">Follow IMDb on Social</h5>
+      <div class="mb-3">
+        <a href="#" class="me-3">Facebook</a>
+        <a href="#" class="me-3">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+
+      <h5 class="mb-3">Get the IMDb App</h5>
+      <p>For Android and iOS</p>
+
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <a href="#" class="me-3">Help</a>
+          <a href="#" class="me-3">Site Index</a>
+          <a href="#" class="me-3">IMDbPro</a>
+          <a href="#" class="me-3">Box Office Mojo</a>
+          <a href="#" class="me-3">License IMDb Data</a>
+          <a href="#" class="me-3">Press Room</a>
+          <a href="#" class="me-3">Advertising</a>
+          <a href="#" class="me-3">Jobs</a>
+          <a href="#" class="me-3">Conditions of Use</a>
+          <a href="#" class="me-3">Privacy Policy</a>
+          <a href="#" class="me-3">Your Ads Privacy Choices</a>
+        </div>
+      </div>
+
+      <hr class="border-secondary my-4">
+
+      <p class="mb-0">&copy; Akash R. Kamaliya</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

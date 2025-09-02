@@ -1,0 +1,429 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo{
+            display: flex;
+            align-items: center;
+        }
+        .logo i{
+            font-size: 30px;
+            font-weight: bold;
+            color: #00AFF5;
+            display: flex;
+            align-items: center;
+            margin: 1rem;
+        }
+        .logo span{
+            font-size: 30px;
+            font-weight: bold;
+            color: #00AFF5;
+            display: flex;
+            align-items: center;
+            margin: 1rem;
+        }
+        .logo div a{
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+            display: flex;
+            align-items: center;
+            margin: 1rem;
+        }
+        .dropdown{
+            display: flex;
+        }
+        .dropdown div a{
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+            display: flex;
+            align-items: center;
+            margin: 1rem;
+        }
+        .logo i {
+            margin-right: 8px;
+            margin: 1rem;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+            font-weight: 500;
+        }
+        
+        .auth-buttons {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-weight: 500;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+        .temp{
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            width: 15rem;
+        }
+        .temp p {
+            margin: .2rem;
+        }
+        .temp i {
+            margin: .2rem;
+        }
+        .temp1{
+            border: none;
+            background-color: white;
+        }
+        .temp2{
+            font-size: 25px;
+        }
+
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+            height: 350px;
+            background-image: url(hello.webp);
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .search-form {
+            background: white;
+            max-width: 87%;
+            margin: 20px auto;
+            padding: 30px;
+            border-radius: 12px;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            position: relative;
+            top: 70px;
+        }
+        
+        .form-row {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        
+        
+        .form-group input, .form-group select {
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus, .form-group select:focus {
+            border-color: #00AFF5;
+            outline: none;
+        }
+        
+        
+        
+        .search-btn button {
+            width: 10rem;
+            padding: 16px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+        .features {
+            padding: 100px 0;
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+        }
+        
+        .features-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+        }
+        
+        .feature {
+            flex: 1;
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            border-radius: 12px;
+            background: #f8f9fa;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+        }
+        
+        .feature-number {
+            font-size: 80px;
+            font-weight: 800;
+            color: #00AFF5;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+        
+        .feature-title {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .feature-description {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .how-it-works {
+            padding: 100px 0;
+            background-color: #f8f9fa;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 60px;
+            color: #333;
+        }
+        
+        .steps {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .step {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: #00AFF5;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+        
+        .step-title {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .step-description {
+            font-size: 16px;
+            color: #666;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 60px 0 30px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .footer-column h3 {
+            margin-bottom: 25px;
+            font-size: 20px;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 15px;
+        }
+        
+        .footer-column ul li a {
+            color: #ccc;
+            transition: color 0.3s;
+            text-decoration: none;
+        }
+        
+        .footer-column ul li a:hover {
+            color: white;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            color: white;
+            transition: background 0.3s;
+        }
+        
+        .social-links a:hover {
+            background: #00AFF5;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            margin-top: 30px;
+            border-top: 1px solid #444;
+            color: #aaa;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .hero p {
+                font-size: 18px;
+            }
+            
+            .form-row {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .feature {
+                min-width: 100%;
+            }
+            
+            .steps {
+                flex-direction: column;
+            }
+            
+            nav {
+                display: none;
+            }
+        }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
